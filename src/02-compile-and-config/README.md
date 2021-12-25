@@ -81,5 +81,18 @@ tsc --watch  // watch MODE를 주는 컴파일
   - exclude랑은 좀 다름
     →ts compiler will not just look only at that source folder, Also !! maker sure that project structure you set up there is kept in dist folder.
     subfolders에 존재하는 ts files가 roote dir에 들어가게 함
-- noEmit
+- `noEmit`
   - check files report any potential error without actually creating an out file import
+- `noEmitError`
+
+  - 실제 컴파일을 진행하지 않고, error check 만 진행
+
+- `noUnusedLocals` , `noUnusedParameters` , `noImplicitReturns`
+  - addtional check를 통해서 type을 잡아 줄 수 있는 옵션들
+  - unused 되고 있는 타입코드들을 리포트해준다.
+
+## Useful Links
+
+- tsconfig Docs: [https://www.typescriptlang.org/docs/handbook/tsconfig-json.html](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html)
+- Compiler Config Docs: [https://www.typescriptlang.org/docs/handbook/compiler-options.html](https://www.typescriptlang.org/docs/handbook/compiler-options.html)
+- VS Code TS Debugging: [https://code.visualstudio.com/docs/typescript/typescript-debugging](https://code.visualstudio.com/docs/typescript/typescript-debugging)
