@@ -29,10 +29,10 @@
     console.log(combinedAges);
 
     //   const combinedNumberAges = combine(30, 26, "as-nsafasfumber"); -- type error
-    const combinedNumberAges = combine(30, 26, "as-number");
+    const combinedNumberAges = combine(30, 26);
     console.log(combinedNumberAges);
 
-    const combinedNames = combine("dahye", "daji", "as-text");
+    const combinedNames = combine("dahye", "daji");
     console.log(combinedNames);
   }
 }

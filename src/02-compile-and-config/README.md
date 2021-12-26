@@ -49,7 +49,9 @@ tsc --watch  // watch MODE를 주는 컴파일
   - 어떤 version으로 compile할지 설정
     ⇒ default es5이며, 지원하는 browser를 확인해보고 설정하면 된다.
 - `lib`
+
   - 특정 api에 접근하여 ts 지정 할 수 있게 해준다.
+
   ```json
 
   "lib":[
@@ -60,16 +62,17 @@ tsc --watch  // watch MODE를 주는 컴파일
   ]
   -
   ```
+
 - **`allowjs`**
   — TODO : 더 알아볼것
 - **`checkjs`**
   - not compile but check the syntack in there and report potential erros
-  ⇒ if don’t really want to use TS, but want to take advantage of some
+    ⇒ if don’t really want to use TS, but want to take advantage of some
 - `**sourceMap**`
   - help with debugging and development
   - ~map 파일 generate
   - act ad bridge which is understood by modern browsers and developer tools there to connect the JS file to the input files.
-  ⇒ 브라우저 데브툴에서 ts 파일 생성되고, break point도 지정할 수 있음. ‼️
+    ⇒ 브라우저 데브툴에서 ts 파일 생성되고, break point도 지정할 수 있음. ‼️
 
 ### Out
 

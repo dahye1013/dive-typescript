@@ -14,6 +14,6 @@
 
   for (const hobby of person.hobbies) {
     console.log(hobby.toUpperCase());
-    console.log(hobby.map((h) => h)); //Property 'map' does not exist on type 'string'.
+    // console.log(hobby.map((h) => h)); //Property 'map' does not exist on type 'string'.
   }
 }

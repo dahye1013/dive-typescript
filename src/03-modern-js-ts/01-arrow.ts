@@ -1,10 +1,7 @@
 /**
  * arrow function sample
  */
-
-{
-  const add = (a: number = 0, b: number = 0) => a + b;
-}
+const add = (a: number = 0, b: number = 0) => a + b;
 
 /**
  * function 표현 방식 차이
