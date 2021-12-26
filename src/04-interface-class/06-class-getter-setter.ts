@@ -76,6 +76,7 @@
   const accounting = new AccountDepartment("A1", []);
   // accounting.mostRecentReport; //-- error (No report found)
   accounting.addReport("Report1 : something went wrong");
+  accounting.mostRecentReport = "recentRepost : Set Report"; //set
   // accounting.mostRecentReport = ''; //--error (please pass in valid value)
   console.log(accounting.mostRecentReport);
   accounting.printReports();
