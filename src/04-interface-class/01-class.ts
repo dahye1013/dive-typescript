@@ -17,7 +17,7 @@
     constructor(n: string) {
       this.name = n;
     }
-    describe() {
+    describe(this: Department) {
       console.log("This Department is " + this.name);
     }
   }
@@ -26,8 +26,10 @@
   console.log(accounting);
   accounting.describe();
 
-  const accountingCopy = { describe: accounting.describe };
+  const accountingCopy = { name: "dahye", describe: accounting.describe };
   //this instance is created with the object literal, not based on class
   //-> dummy object, - this에 refer 접근할 내부 객체가 존재하지 않아서 undfined 출력
-  accountingCopy.describe(); //undefined
+
+  //class methods에 파라미터를 지정해주면 dummy 객체에 name property를 할당하여 사용할 수 있다.
+  accountingCopy.describe();
 }
