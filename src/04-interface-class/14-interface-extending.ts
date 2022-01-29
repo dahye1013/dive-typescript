@@ -20,7 +20,7 @@
 
   class Person implements Greetable {
     name: string;
-    age: string;
+    age!: string;
     constructor(n: string) {
       this.name = n;
     }
