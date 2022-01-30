@@ -8,7 +8,7 @@
  *  ✔️ can't access them from insdie non static parts
  * -> because this does refer to the instasnce
  * -> if want to use the static property or a methods from insde have to use class name
- * 
+ *
  * (example)
  * built into JS, which is not defined by TS and not defined by user
  * -> math constructor function of class
@@ -16,7 +16,7 @@
  *
  */
 
- {
+{
   class Department {
     protected employees: string[] = [];
     static fiscalYear = 2022;
@@ -24,11 +24,10 @@
       return { name: name };
     }
 
-    constructor(private readonly id: string, public name: string) {\
+    constructor(private readonly id: string, public name: string) {
       //✔️ static can't access from inside -> `this` does refer to the instance
       //   console.log(this.fiscalYear)
-      console.log(Department.fiscalYear)
-      
+      console.log(Department.fiscalYear);
     }
 
     describe(this: Department) {
@@ -44,6 +43,6 @@
   }
 
   const employee = Department.createEmployee("Dahye E");
-  console.log(employee)
-  console.log(Department.fiscalYear)
+  console.log(employee);
+  console.log(Department.fiscalYear);
 }
